@@ -15,3 +15,9 @@ TreeNode_ptr createTreeNode(int data){
 	newNode->right = 0;
 	return newNode;
 }
+
+int insert(BSTree *newTree,int data){
+	if(newTree->root == NULL)
+		newTree->root = createTreeNode(data);
+		return 1;
+}

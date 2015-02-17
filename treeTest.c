@@ -25,3 +25,11 @@ void test_createTreeNode_will_create_right_node_null(){
 	TreeNode_ptr newNode1 = createTreeNode(data);
 	assert(newNode1->right == 0);
 }
+
+void test_insert_will_add_a_node_into_tree_if_root_node_is_null(){
+	int data = 10,result;
+	BSTree newTree = createBSTree();
+	assert(newTree.root == NULL);
+	result = insert(&newTree,data);
+	assertEqual(newTree.root->data,10);
+}
