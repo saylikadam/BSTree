@@ -13,3 +13,15 @@ void test_createTreeNode_will_create_a_newNode(){
 	TreeNode_ptr node1 = createTreeNode(data);
 	assertEqual(node1->data,0);
 }
+
+void test_createTreeNode_will_create_left_node_null(){
+	int data = 1;
+	TreeNode_ptr newNode1 = createTreeNode(data);
+	assert(newNode1->left == 0);
+}
+
+void test_createTreeNode_will_create_right_node_null(){
+	int data = 1;
+	TreeNode_ptr newNode1 = createTreeNode(data);
+	assert(newNode1->right == 0);
+}
