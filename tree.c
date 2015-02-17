@@ -1,4 +1,6 @@
 #include "tree.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 BSTree createBSTree(void){
 	BSTree newTree;
@@ -6,3 +8,10 @@ BSTree createBSTree(void){
 	return newTree;
 }
 
+TreeNode_ptr createTreeNode(int data){
+	TreeNode_ptr newNode = malloc( sizeof(TreeNode));
+	newNode->data = data;
+	newNode->left = 0;
+	newNode->right = 0;
+	return newNode;
+}

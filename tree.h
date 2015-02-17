@@ -15,3 +15,4 @@ struct treeNode{
 
 
 BSTree createBSTree(void);
+TreeNode_ptr createTreeNode(int);

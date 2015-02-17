@@ -6,8 +6,8 @@ typedef struct{
 } Test;
 
 //code to be updated starts
-TestFn setup,teardown,fixtureSetup,fixtureTearDown,test_createBSTree_will_create_a_empty_tree;
-Test test[] = {"test_createBSTree_will_create_a_empty_tree",test_createBSTree_will_create_a_empty_tree};
+TestFn setup,teardown,fixtureSetup,fixtureTearDown,test_createBSTree_will_create_a_empty_tree,test_createTreeNode_will_create_a_newNode;
+Test test[] = {"test_createBSTree_will_create_a_empty_tree",test_createBSTree_will_create_a_empty_tree,"test_createTreeNode_will_create_a_newNode",test_createTreeNode_will_create_a_newNode};
 char testFileName[] = {"treeTest.c"};
 void _setup(){/*CALL_SETUP*/}
 void _teardown(){/*CALL_TEARDOWN*/}
